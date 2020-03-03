@@ -1,0 +1,24 @@
+.body
+{
+    padding-left:35%;
+    margin-top:7%;
+    margin-bottom: 10%;
+}
+.success
+{
+    width:20%;
+    padding-left:10%;
+    height:auto;
+}
+@media(max-width:720px)
+{
+    .body
+    {
+        padding-left:20%;
+        padding-right: 10%;
+    }
+    .success
+    {
+        padding-left: 30%;
+    }
+}

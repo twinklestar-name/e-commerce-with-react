@@ -1,0 +1,228 @@
+body
+{
+    box-sizing: border-box;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+/* -----------------------HEADER------------------------------------------------- */
+.topbar
+{
+    height: 12vh;
+    font-size: 24px;
+    background-color: #006400;
+    padding-left:10px;
+    padding-top:20px;
+    padding-bottom: 20px; 
+    padding-right: 50px;
+    box-sizing: border-box;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.left
+{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+.logo
+{
+    height:100%;
+    width:auto;
+}
+.title
+{
+    padding-left: 20px;
+    font-size: 38px;
+    vertical-align: top;
+    margin-top:20px;
+    color: whitesmoke;
+    font-family: 'Life Savers', cursive;
+}
+.right
+{
+    display: inline;
+    margin-left:30%;
+    box-sizing: border-box;
+}
+.count
+{
+    border-radius:50%;
+    border:none;
+    position: relative;
+    z-index:1;
+    right:10px;
+    bottom:20px;
+    cursor: pointer;
+}
+i
+{
+    padding-left: 20px;
+    color: whitesmoke;
+    font-size: 32px;
+    cursor: pointer;
+}
+.search
+{
+    min-width: 300px;
+    font-size: 18px;
+    border-radius:100px;
+    border: 0.28px solid black;
+    outline: none;
+    margin-top: 0;
+    padding:10px;
+}
+.search:focus
+{
+    box-shadow:3px 2px 5px silver;
+}
+.profile
+{
+    height:58%;
+    width:4%;
+    margin-left:1%;
+    border-radius:50%;
+    margin-top:1%;
+}
+/* ------------------------HEADER ENDS--------------------------------------------------- */
+/* -------------------------MAIN BODY STARTS -------------------------------------------- */
+.App
+{
+    width: 100%;
+    height:auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading
+{
+    width: 100%;
+    font-size:28px;
+    font-family: 'Jomolhari', serif;
+    margin-bottom: 0px;
+    padding-left:50px;
+}
+/* -----------------------PRODUCT CARD --------------------------------------------------- */
+.Card
+{
+    width: 13%;
+    min-height: 450px;
+    height:50%;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px silver;
+    margin-top:18px;
+    margin-left:40px;
+    padding:15px;
+}
+.Card:hover
+{
+    box-shadow: 1px 1px 11px silver;
+}
+/* --------------PRODUCT CREDENTIALS---------------------------------------- */
+.productName
+{
+    font-size:20px;
+    margin:0;
+    font-weight: normal;
+}
+.productBrand
+{
+    font-size: 18px;
+    margin:0px;
+    margin-top:10px;
+}
+.productPreview
+{
+    width: 100%;
+    height:auto;
+}
+.productPrice
+{
+    font-weight: 600;
+    font-size:22px;
+    color:green;
+    margin:0;
+    margin-top:20px;
+}
+/* --------------------FOOTER----------------------------------------------------- */
+.footerList
+{
+    list-style: none;
+    font-size:16px;
+}
+footer
+{
+    height:auto;
+    background-color:black;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:30px;
+    box-sizing: border-box;
+    padding-top:30px;
+}
+.list
+{
+    width: 20%;
+}
+/* ----------------------MOBILE RESPONSIVE-------------------------------- ------- */
+@media(max-width:720px)
+{
+    /* -------------------- HEADER ------------------------------- */
+    .search
+    {
+        display: none;
+    }
+    .left
+    {
+        width: 30%;
+    }
+    .anchor
+    {
+        display: flex;
+        vertical-align: top;
+    }
+    .title
+    {
+        font-size:26px;
+        margin-top: 0px;
+        padding-left: 7px;
+    }
+    i
+    {
+        font-size:26px;
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+    .topbar
+    {
+        padding-right:10px;
+    }
+    /* main BODY */
+    .heading
+    {
+        color: green;
+        font-size:22px;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    /* --------------------- PRODUCT CARD ------------------------------- */
+    .Card
+    {
+        width: 50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    /* FOOTER */
+    footer
+    {
+        flex-direction: column;
+    }
+}
